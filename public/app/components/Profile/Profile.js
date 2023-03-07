@@ -23,6 +23,11 @@ class MyProfile extends HTMLElement {
         this.render();
     }
     attributeChangedCallback(propName, _, newValue) {
+        switch (propName) {
+            default:
+                this[propName] = newValue;
+                break;
+        }
         this.render();
     }
     render() {

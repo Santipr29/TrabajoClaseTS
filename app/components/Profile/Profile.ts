@@ -35,6 +35,10 @@ class MyProfile extends HTMLElement {
         _: string | undefined,
         newValue: string | undefined
         ) { 
+            switch (propName) {
+                default:
+                this[propName] = newValue;
+                break;}
             this.render();
         }
         

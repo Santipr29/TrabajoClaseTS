@@ -14,7 +14,7 @@ class AppContainer extends HTMLElement {
                 "my-profile"
                 ) as MyProfile;
                 profileCard.setAttribute(Attribute.name, user.name);
-                profileCard.setAttribute(Attribute.email, String(user.email));
+                profileCard.setAttribute(Attribute.email,user.email);
                 profileCard.setAttribute(Attribute.city, user.address.city);
                 profileCard.setAttribute(Attribute.nameCompany, user.company.name);
                 this.profiles.push(profileCard);
